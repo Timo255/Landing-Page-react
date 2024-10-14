@@ -27,7 +27,7 @@ const PopUp = () => {
     if(!firstNameError & !lastNameError & !emailError){
       const datas = {firstName, lastName, email};
       setButtonText("Subscribing.....")
-      let response = await axios.post(`http://localhost:5000/send`,datas)
+      let response = await axios.post(`https://landing-page-react-6py8.onrender.com/send`,datas)
       setButtonText("Subscribe");
       setFirstName("");
       setLastName("");
